@@ -1,3 +1,13 @@
+const express = require('express');
+const app = express();
+
+app.get('/', (req, res) => {
+    res.send("Bot actif !");
+});
+
+app.listen(3000, () => {
+    console.log("🌐 Serveur web actif sur le port 3000");
+});
 require('dotenv').config();
 const fs = require('fs');
 const {
