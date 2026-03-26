@@ -46,6 +46,7 @@ function getUser(id) {
 }
 
 // ===== BOT READY =====
+console.log("TOKEN:", process.env.TOKEN ? "OK" : "PAS OK");
 client.once(Events.ClientReady, () => {
     console.log(`✅ Connecté en tant que ${client.user.tag}`);
 });
