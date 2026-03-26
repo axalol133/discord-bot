@@ -280,4 +280,6 @@ setInterval(() => {
     }
 }, 60000);
 
-client.login(process.env.TOKEN);
+client.login(process.env.TOKEN)
+    .then(() => console.log("🔑 Tentative de connexion..."))
+    .catch(err => console.error("❌ ERREUR LOGIN :", err));
